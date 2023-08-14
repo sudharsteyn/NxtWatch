@@ -6,22 +6,23 @@ export const NavContainer = styled.nav`
   top: 0;
   width: 100%;
   padding: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: ${props => (props.darkTheme ? '#212121' : '#ffffff')};
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media screen and (min-width: 768px) {
-    padding-left: 30px;
-    padding-right: 30px;
+  @media screen and (max-width: 767px) {
+    padding: 12px;
   }
 `
 
 export const Logo = styled.img`
-  width: 100px;
-  height: 30px;
-  @media screen and (min-width: 768px) {
-    width: 105px;
-    height: 35px;
+  width: 105px;
+  height: 35px;
+  @media screen and (max-width: 767px) {
+    width: 100px;
+    height: 30px;
   }
 `
 
@@ -53,8 +54,9 @@ export const MenuButton = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
-  @media screen and (min-width: 768px) {
-    display: none;
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: inline;
   }
 `
 
@@ -131,33 +133,34 @@ export const LogoutButton = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
-  @media screen and (min-width: 768px) {
-    display: none;
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: inline;
   }
 `
 
 export const LogoutPopupContainer = styled.div`
   background-color: ${props => (props.darkTheme ? '#212121' : '#ffffff')};
-  width: 300px;
+  width: 450px;
   border-radius: 8px;
   padding: 18px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media screen and (min-width: 768px) {
-    width: 450px;
+  @media screen and (max-width: 767px) {
+    width: 300px;
   }
 `
 
 export const LogoutConfirmationMsg = styled.p`
   font-family: 'Roboto';
-  font-size: 15px;
+  font-size: 20px;
   margin: 10px;
   color: ${props => (props.darkTheme ? '#ffffff' : '#000000')};
   text-align: center;
-  @media screen and (min-width: 768px) {
-    font-size: 20px;
+  @media screen and (max-width: 767px) {
+    font-size: 15px;
   }
 `
 
@@ -170,9 +173,9 @@ export const LogoutButtonContainer = styled.div`
 export const LogoutCloseButton = styled.button`
   background-color: transparent;
   border: 1px solid grey;
-  padding: 8px;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding: 13px;
+  padding-right: 20px;
+  padding-left: 20px;
   color: grey;
   margin: 12px;
   outline: none;
@@ -180,12 +183,12 @@ export const LogoutCloseButton = styled.button`
   border-radius: 6px;
   font-family: Roboto;
   font-weight: bold;
-  font-size: 12px;
-  @media screen and (min-width: 768px) {
-    font-size: 15px;
-    padding: 13px;
-    padding-right: 20px;
-    padding-left: 20px;
+  font-size: 15px;
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    padding: 8px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
 `
 
@@ -193,9 +196,6 @@ export const LogoutConfirmButton = styled.button`
   align-self: flex-end;
   background-color: #3b82f6;
   color: white;
-  padding: 8px;
-  padding-right: 12px;
-  padding-left: 12px;
   border: 1px solid #3b82f6;
   margin: 12px;
   outline: none;
@@ -203,26 +203,29 @@ export const LogoutConfirmButton = styled.button`
   border-radius: 6px;
   font-family: Roboto;
   font-weight: bold;
-  font-size: 12px;
-  @media screen and (min-width: 768px) {
-    font-size: 15px;
-    padding: 13px;
-    padding-right: 20px;
-    padding-left: 20px;
+  font-size: 15px;
+  padding: 13px;
+  padding-right: 20px;
+  padding-left: 20px;
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    padding: 8px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
 `
 export const ProfileImg = styled.img`
-  display: none;
+  display: inline-block;
   height: 30px;
   width: 30px;
   margin-left: 18px;
-  @media screen and (min-width: 768px) {
-    display: inline-block;
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 `
 
 export const LogoutTextButton = styled.button`
-  display: none;
+  display: inline-block;
   font-family: 'Roboto';
   color: ${props => (props.darkTheme ? '#ffffff' : '#3b82f6')};
   font-size: 16px;
@@ -237,7 +240,7 @@ export const LogoutTextButton = styled.button`
   padding-bottom: 5px;
   outline: none;
   cursor: pointer;
-  @media screen and (min-width: 768px) {
-    display: inline-block;
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 `

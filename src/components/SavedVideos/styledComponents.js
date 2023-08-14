@@ -4,6 +4,8 @@ export const SavedVideosContainer = styled.div`
   background-color: ${props => (props.darkTheme ? '#0f0f0f' : '#f9f9f9')};
   min-height: 93vh;
   margin-top: 58px;
+  display: flex;
+  flex-direction: column;
   @media screen and (min-width: 768px) {
     margin-top: 63px;
     margin-left: 220px;

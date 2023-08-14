@@ -23,7 +23,7 @@ export const VideoCardITem = styled.li`
 `
 
 export const VideoThumbnailImg = styled.img`
-  height: 180px;
+  height: 190px;
   width: 100vw;
   @media screen and (min-width: 576px) {
     height: 160px;
